@@ -27,7 +27,6 @@ This extension also provide StringLiteralConverters for both CGRect and CGPoint,
 myView.frame = "10, 10, 20, 20"
 myView.center = "50, 50"
 CGRect rect = "20, 25, 100, 100"
-
 ```
 
 Installation
