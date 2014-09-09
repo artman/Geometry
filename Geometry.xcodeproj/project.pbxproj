@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		72879CBE19BD1F3B0015F977 /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 72879CBD19BD1F3B0015F977 /* Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72879CC819BD1F3B0015F977 /* GeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72879CC719BD1F3B0015F977 /* GeometryTests.swift */; };
+		72879CD219BD1F480015F977 /* UIView+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72879CD119BD1F480015F977 /* UIView+Geometry.swift */; };
+		72879CD319BD222E0015F977 /* UIView+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72879CD119BD1F480015F977 /* UIView+Geometry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,7 @@
 		72879CC319BD1F3B0015F977 /* GeometryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeometryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		72879CC619BD1F3B0015F977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72879CC719BD1F3B0015F977 /* GeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryTests.swift; sourceTree = "<group>"; };
+		72879CD119BD1F480015F977 /* UIView+Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Geometry.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 			children = (
 				72879CBD19BD1F3B0015F977 /* Geometry.h */,
 				72879CBB19BD1F3B0015F977 /* Supporting Files */,
+				72879CD119BD1F480015F977 /* UIView+Geometry.swift */,
 			);
 			path = Geometry;
 			sourceTree = "<group>";
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72879CD219BD1F480015F977 /* UIView+Geometry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72879CD319BD222E0015F977 /* UIView+Geometry.swift in Sources */,
 				72879CC819BD1F3B0015F977 /* GeometryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +304,7 @@
 		72879CCC19BD1F3B0015F977 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -307,12 +314,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		72879CCD19BD1F3B0015F977 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
