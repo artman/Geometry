@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Extends CGRect with helper properties for positioning and setting dimensions
-extension CGRect: StringLiteralConvertible {
+extension CGRect {
     
     /// The top coordinate of the rect.
     public var top: CGFloat {
@@ -103,38 +103,6 @@ extension CGRect: StringLiteralConvertible {
             centerX = value.x
             centerY = value.y
         }
-    }
-    
-    public typealias ExtendedGraphemeClusterLiteralType = StringLiteralType
-    
-    public static func convertFromExtendedGraphemeClusterLiteral(value: ExtendedGraphemeClusterLiteralType) -> CGRect {
-        return convertFromStringLiteral(value)
-    }
-    
-    public static func convertFromStringLiteral(value: StringLiteralType) -> CGRect {
-        if value[value.startIndex] != "{" {
-            let comp = value.componentsSeparatedByString(",")
-            if comp.count != 4 {
-                return CGRectZero
-            }
-            return CGRectFromString("{{\(comp[0]),\(comp[1])}, {\(comp[2]), \(comp[3])}}")
-        }
-        return CGRectFromString(value)
-    }
-}
-
-extension CGPoint: StringLiteralConvertible {
-    public typealias ExtendedGraphemeClusterLiteralType = StringLiteralType
-    
-    public static func convertFromExtendedGraphemeClusterLiteral(value: ExtendedGraphemeClusterLiteralType) -> CGPoint {
-        return convertFromStringLiteral(value);
-    }
-    
-    public static func convertFromStringLiteral(value: StringLiteralType) -> CGPoint {
-        if value[value.startIndex] != "{" {
-            return CGPointFromString("{\(value)}")
-        }
-        return CGPointFromString(value)
     }
 }
 
