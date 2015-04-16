@@ -62,8 +62,8 @@
 		72879CBA19BD1F3B0015F977 /* Geometry */ = {
 			isa = PBXGroup;
 			children = (
-				72879CBD19BD1F3B0015F977 /* Geometry.h */,
 				72879CBB19BD1F3B0015F977 /* Supporting Files */,
+				72879CBD19BD1F3B0015F977 /* Geometry.h */,
 				72879CD119BD1F480015F977 /* UIView+Geometry.swift */,
 			);
 			path = Geometry;
@@ -383,6 +383,7 @@
 				72879CCD19BD1F3B0015F977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72879CCE19BD1F3B0015F977 /* Build configuration list for PBXNativeTarget "GeometryTests" */ = {
 			isa = XCConfigurationList;
@@ -391,6 +392,7 @@
 				72879CD019BD1F3B0015F977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,7 +12,17 @@ values. It adds the following properties to both UIView and CGRect:
 * height
 * centerX
 * centerY
-* center
+
+And it lets you define CGRectangles and CGPoints as strings.
+
+Requirements
+------------
+
+- iOS 7.0+ / Mac OS X 10.9+
+- Xcode 6.3 (Swift 1.2)
+
+Quick start
+-----------
 
 ```
 myView.frame = CGRectMake(10, 10, 20, 20)

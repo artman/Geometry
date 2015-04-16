@@ -33,7 +33,7 @@ extension CGRect: StringLiteralConvertible {
     }
     
     // The bottom coordinate of the rect. Setting this will change origin.y of the rect according to
-    /// the height of the rect.
+    // the height of the rect.
     public var bottom: CGFloat {
         get {
             return origin.y + size.height
@@ -44,7 +44,7 @@ extension CGRect: StringLiteralConvertible {
     }
     
     // The right-side coordinate of the rect. Setting this will change origin.x of the rect according to
-    /// the width of the rect.
+    // the width of the rect.
     public var right: CGFloat {
         get {
             return origin.x + size.width
@@ -106,39 +106,66 @@ extension CGRect: StringLiteralConvertible {
     }
     
     public typealias ExtendedGraphemeClusterLiteralType = StringLiteralType
-    
-    public static func convertFromExtendedGraphemeClusterLiteral(value: ExtendedGraphemeClusterLiteralType) -> CGRect {
-        return convertFromStringLiteral(value)
-    }
-    
-    public static func convertFromStringLiteral(value: StringLiteralType) -> CGRect {
+
+    public init(stringLiteral value: StringLiteralType) {
+        self.init()
+        let rect: CGRect
         if value[value.startIndex] != "{" {
             let comp = value.componentsSeparatedByString(",")
-            if comp.count != 4 {
-                return CGRectZero
+            if comp.count == 4 {
+                rect = CGRectFromString("{{\(comp[0]),\(comp[1])}, {\(comp[2]), \(comp[3])}}")
+            } else {
+                rect = CGRectZero
             }
-            return CGRectFromString("{{\(comp[0]),\(comp[1])}, {\(comp[2]), \(comp[3])}}")
+        } else {
+            rect = CGRectFromString(value)
         }
-        return CGRectFromString(value)
+        
+        self.size = rect.size;
+        self.origin = rect.origin;
+    }
+    
+    public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType) {
+        self.init(stringLiteral: value)
+    }
+    
+    public typealias UnicodeScalarLiteralType = StringLiteralType
+
+    public init(unicodeScalarLiteral value: UnicodeScalarLiteralType) {
+        self.init(stringLiteral: value)
     }
 }
 
 extension CGPoint: StringLiteralConvertible {
     public typealias ExtendedGraphemeClusterLiteralType = StringLiteralType
     
-    public static func convertFromExtendedGraphemeClusterLiteral(value: ExtendedGraphemeClusterLiteralType) -> CGPoint {
-        return convertFromStringLiteral(value);
+    public init(stringLiteral value: StringLiteralType) {
+        self.init()
+        
+        let point:CGPoint;
+        if value[value.startIndex] != "{" {
+            point = CGPointFromString("{\(value)}")
+        } else {
+            point = CGPointFromString(value)
+        }
+        self.x = point.x;
+        self.y = point.y;
     }
     
-    public static func convertFromStringLiteral(value: StringLiteralType) -> CGPoint {
-        if value[value.startIndex] != "{" {
-            return CGPointFromString("{\(value)}")
-        }
-        return CGPointFromString(value)
+    public init(extendedGraphemeClusterLiteral value: ExtendedGraphemeClusterLiteralType) {
+        self.init(stringLiteral: value)
+    }
+    
+    public typealias UnicodeScalarLiteralType = StringLiteralType
+
+    public init(unicodeScalarLiteral value: UnicodeScalarLiteralType) {
+        self.init(stringLiteral: value)
     }
 }
 
 extension UIView {
+    
+    /// The top coordinate of the UIView.
     public var top: CGFloat {
         get {
             return frame.left
@@ -150,9 +177,10 @@ extension UIView {
         }
     }
     
+    /// The left coordinate of the UIView.
     public var left: CGFloat {
         get {
-            return frame.right
+            return frame.left
         }
         set(value) {
             var frame = self.frame
@@ -161,6 +189,7 @@ extension UIView {
         }
     }
     
+    /// The bottom coordinate of the UIView.
     public var bottom: CGFloat {
         get {
             return frame.bottom
@@ -172,6 +201,7 @@ extension UIView {
         }
     }
     
+    /// The right coordinate of the UIView.
     public var right: CGFloat {
         get {
             return frame.right
@@ -183,6 +213,31 @@ extension UIView {
         }
     }
     
+    // The width of the UIView.
+    public var width: CGFloat {
+        get {
+            return frame.width
+        }
+        set(value) {
+            var frame = self.frame
+            frame.width = value
+            self.frame = frame
+        }
+    }
+    
+    // The height of the UIView.
+    public var height: CGFloat {
+        get {
+            return frame.height
+        }
+        set(value) {
+            var frame = self.frame
+            frame.height = value
+            self.frame = frame
+        }
+    }
+    
+    /// The horizontal center coordinate of the UIView.
     public var centerX: CGFloat {
         get {
             return frame.centerX
@@ -194,6 +249,7 @@ extension UIView {
         }
     }
     
+    /// The vertical center coordinate of the UIView.
     public var centerY: CGFloat {
         get {
             return frame.centerY
@@ -201,17 +257,6 @@ extension UIView {
         set(value) {
             var frame = self.frame
             frame.centerY = value
-            self.frame = frame
-        }
-    }
-    
-    public var center: CGPoint {
-        get {
-            return frame.center
-        }
-        set(value) {
-            var frame = self.frame
-            frame.center = value
             self.frame = frame
         }
     }
