@@ -168,7 +168,7 @@ extension UIView {
     /// The top coordinate of the UIView.
     public var top: CGFloat {
         get {
-            return frame.left
+            return frame.top
         }
         set(value) {
             var frame = self.frame
