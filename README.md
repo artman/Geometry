@@ -1,5 +1,5 @@
-Geometry
-========
+# Geometry
+
 
 Geometry is a UIView and CGRect extension that lets you work with view and rect geometry easier.
 values. It adds the following properties to both UIView and CGRect:
@@ -15,14 +15,12 @@ values. It adds the following properties to both UIView and CGRect:
 
 And it lets you define CGRectangles and CGPoints as strings.
 
-Requirements
-------------
+## Requirements
 
 - iOS 7.0+ / Mac OS X 10.9+
 - Xcode 6.3 (Swift 1.2)
 
-Quick start
------------
+## Quick start
 
 ```
 myView.frame = CGRectMake(10, 10, 20, 20)
@@ -39,15 +37,22 @@ myView.center = "50, 50"
 var rect: CGRect = "20, 25, 100, 100"
 ```
 
-Installation
-------------
-1. Copy the UIView+Geometry.swift file over to your project.
-2. Done.
+## Installation
 
-Contribute
-----------
+To manually install, copy the UIView+Geometry.swift file over to your project.
+
+### Carthage
+
+To integrate Signals into your project using Carthage, add the following to your `Cartfile`:
+
+```ruby
+github "artman/Geometry" ~> 1.0
+```
+
+## Contribute
+
 To contribute, just fork, branch & send a pull request. To get in touch, hit me up on Twitter [@artman](http://twitter.com/artman)
 
-License
--------
+## License
+
 Geometry is released under an MIT license. See the LICENSE file for more information
