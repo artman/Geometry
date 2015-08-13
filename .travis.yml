@@ -4,3 +4,4 @@ xcode_scheme: Geometry
 osx_image: xcode6.4
 notifications:
   email: false
+
