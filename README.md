@@ -1,5 +1,5 @@
 # Geometry
-
+[![Build Status](https://travis-ci.org/artman/Geometry.svg?branch=master)](https://travis-ci.org/artman/Geometry)
 
 Geometry is a UIView and CGRect extension that lets you work with view and rect geometry easier.
 values. It adds the following properties to both UIView and CGRect:
