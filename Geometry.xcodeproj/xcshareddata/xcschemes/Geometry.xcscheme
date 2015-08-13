@@ -28,7 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "72879CC219BD1F3B0015F977"
+               BuildableName = "GeometryTests.xctest"
+               BlueprintName = "GeometryTests"
+               ReferencedContainer = "container:Geometry.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "72879CB719BD1F3A0015F977"
+            BuildableName = "Geometry.framework"
+            BlueprintName = "Geometry"
+            ReferencedContainer = "container:Geometry.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"

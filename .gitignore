@@ -1,4 +1,6 @@
 build/
+DerivedData
+
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -8,9 +10,14 @@ build/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+
 *.xccheckout
 *.moved-aside
-DerivedData
+*.xcuserstate
+*.xcscmblueprint
+
 *.hmap
 *.ipa
-*.xcuserstate
+
+Pods/
+Carthage/Build
