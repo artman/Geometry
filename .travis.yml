@@ -2,6 +2,7 @@ language: objective-c
 xcode_project: Geometry.xcodeproj
 xcode_scheme: Geometry
 osx_image: xcode6.4
+xcode_sdk: iphonesimulator8.4
 notifications:
   email: false
 
