@@ -27,11 +27,9 @@ And it lets you define CGRectangles and CGPoints as strings.
 
 ## Installation
 
-> **CocoaPods uses embedded frameworks that require a minimum deployment target of iOS 8 or OS X Mavericks.**
->
-> To use Signals with a project targeting iOS 7, simply copy `Geometry.swift` into your project.
+To use Signals with a project targeting iOS 7, copy `Geometry.swift` into your project.
 
-### CocoaPods
+#### CocoaPods
 
 CocoaPods 0.36 adds supports for Swift and embedded frameworks. To integrate Geometry into your project add the following to your `Podfile`:
 
@@ -42,7 +40,7 @@ use_frameworks!
 pod 'Geometry', '~> 1.0'
 ```
 
-### Carthage
+#### Carthage
 
 To integrate Geometry into your project using Carthage add the following to your `Cartfile`:
 
