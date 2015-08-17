@@ -11,6 +11,8 @@
 		72879CC819BD1F3B0015F977 /* GeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72879CC719BD1F3B0015F977 /* GeometryTests.swift */; };
 		72879CD219BD1F480015F977 /* UIView+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72879CD119BD1F480015F977 /* UIView+Geometry.swift */; };
 		72879CD319BD222E0015F977 /* UIView+Geometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72879CD119BD1F480015F977 /* UIView+Geometry.swift */; };
+		72A3F8171B818AFD003A946C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A3F8161B818AFD003A946C /* Foundation.framework */; };
+		72A3F8191B818B02003A946C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A3F8181B818B02003A946C /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		72879CC619BD1F3B0015F977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72879CC719BD1F3B0015F977 /* GeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryTests.swift; sourceTree = "<group>"; };
 		72879CD119BD1F480015F977 /* UIView+Geometry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Geometry.swift"; sourceTree = "<group>"; };
+		72A3F8161B818AFD003A946C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		72A3F8181B818B02003A946C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72A3F8191B818B02003A946C /* UIKit.framework in Frameworks */,
+				72A3F8171B818AFD003A946C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		72879CAE19BD1F3A0015F977 = {
 			isa = PBXGroup;
 			children = (
+				72A3F8181B818B02003A946C /* UIKit.framework */,
+				72A3F8161B818AFD003A946C /* Foundation.framework */,
 				72879CBA19BD1F3B0015F977 /* Geometry */,
 				72879CC419BD1F3B0015F977 /* GeometryTests */,
 				72879CB919BD1F3B0015F977 /* Products */,
