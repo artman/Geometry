@@ -47,7 +47,7 @@ class GeometryTests: XCTestCase {
     }
     
     func testUIView() {
-        var view = UIView(frame: "10, 10, 20, 20")
+        let view = UIView(frame: "10, 10, 20, 20")
   
         view.top += 5
         XCTAssertEqual(view.frame, CGRect(x: 10, y: 15, width: 20, height: 20), "Should modified rect correctly")
@@ -87,14 +87,14 @@ class GeometryTests: XCTestCase {
         XCTAssertEqual(rect, CGRect(x: 10, y: 20, width: 50, height: 60), "Should have create from string")
         
         let view = UIView(frame: "{{10, 20}, {50, 60}}")
-        XCTAssertEqual(rect, CGRect(x: 10, y: 20, width: 50, height: 60), "Should have create from string")
+        XCTAssertEqual(view.frame, CGRect(x: 10, y: 20, width: 50, height: 60), "Should have create from string")
     }
     
     func testPointStringConversion() {
-        var point: CGPoint = "10, 20"
+        let point: CGPoint = "10, 20"
         XCTAssertEqual(point, CGPoint(x: 10, y: 20), "Should have create from string")
         
-        var view = UIView(frame: "0, 0, 10, 10");
+        let view = UIView(frame: "0, 0, 10, 10");
         view.center = "10, 10"
         XCTAssertEqual(view.frame, CGRect(x: 5, y: 5, width: 10, height: 10), "Should have create from string")
     }

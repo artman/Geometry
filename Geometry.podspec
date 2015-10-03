@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Geometry'
-  s.version = '1.0.0'
+  s.version = '2.0.0'
   s.license = 'MIT'
   s.summary = 'Geometry is a UIView and CGRect extension that lets you work with view and rect geometry easier.'
   s.homepage = 'https://github.com/artman/Geometry'
