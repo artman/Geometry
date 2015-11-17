@@ -51,7 +51,7 @@ github "artman/Geometry" ~> 1.0
 
 ## Quick start
 
-```
+```Swift
 myView.frame = CGRectMake(10, 10, 20, 20)
 myView.left = 20 // Frame is now {{20, 10}, {20, 20}}
 myView.width = 100 // Frame is now {{20, 10}, {100, 20}}
@@ -60,7 +60,7 @@ myView.right = 150 // Frame is now {{50, 10}, {100, 20}}
 
 This extension also provides StringLiteralConverters for both CGRect and CGPoint, so you can use Strings to initialize a CGRect:
 
-```
+```Swift
 myView.frame = "10, 10, 20, 20"
 myView.center = "50, 50"
 var rect: CGRect = "20, 25, 100, 100"
