@@ -1,6 +1,6 @@
 # Geometry
 [![Build Status](https://travis-ci.org/artman/Geometry.svg?branch=master)](https://travis-ci.org/artman/Geometry)
-[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/Geometry.svg)](https://cocoapods.org/pods/Geometry)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/Geometry.svg)](https://cocoapods.org/pods/Geometry)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 ![License](https://img.shields.io/cocoapods/l/Geometry.svg?style=flat&color=gray)
 ![Platform](https://img.shields.io/cocoapods/p/Geometry.svg?style=flat)
