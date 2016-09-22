@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// Extends CGRect with helper properties for positioning and setting dimensions
-extension CGRect: StringLiteralConvertible {
+extension CGRect: ExpressibleByStringLiteral {
     
     /// The top coordinate of the rect.
     public var top: CGFloat {
@@ -111,11 +111,11 @@ extension CGRect: StringLiteralConvertible {
         self.init()
         let rect: CGRect
         if value[value.startIndex] != "{" {
-            let comp = value.componentsSeparatedByString(",")
+            let comp = value.components(separatedBy: ",")
             if comp.count == 4 {
                 rect = CGRectFromString("{{\(comp[0]),\(comp[1])}, {\(comp[2]), \(comp[3])}}")
             } else {
-                rect = CGRectZero
+                rect = CGRect.zero
             }
         } else {
             rect = CGRectFromString(value)
@@ -136,7 +136,7 @@ extension CGRect: StringLiteralConvertible {
     }
 }
 
-extension CGPoint: StringLiteralConvertible {
+extension CGPoint: ExpressibleByStringLiteral {
     public typealias ExtendedGraphemeClusterLiteralType = StringLiteralType
     
     public init(stringLiteral value: StringLiteralType) {
