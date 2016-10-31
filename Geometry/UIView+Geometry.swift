@@ -55,7 +55,7 @@ extension CGRect: ExpressibleByStringLiteral {
     }
     
     // The width of the rect.
-    public var width: CGFloat {
+    public var viewWidth: CGFloat {
         get {
             return size.width
         }
@@ -65,7 +65,7 @@ extension CGRect: ExpressibleByStringLiteral {
     }
     
     // The height of the rect.
-    public var height: CGFloat {
+    public var viewHeight: CGFloat {
         get {
             return size.height
         }
@@ -214,25 +214,25 @@ extension UIView {
     }
     
     // The width of the UIView.
-    public var width: CGFloat {
+    public var viewWidth: CGFloat {
         get {
             return frame.width
         }
         set(value) {
             var frame = self.frame
-            frame.width = value
+            frame.viewWidth = value
             self.frame = frame
         }
     }
     
     // The height of the UIView.
-    public var height: CGFloat {
+    public var viewHeight: CGFloat {
         get {
             return frame.height
         }
         set(value) {
             var frame = self.frame
-            frame.height = value
+            frame.viewHeight = value
             self.frame = frame
         }
     }
