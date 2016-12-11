@@ -393,10 +393,11 @@
 				INFOPLIST_FILE = Geometry/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.artman.Geometry-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.artman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Geometry;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
@@ -424,10 +425,11 @@
 				INFOPLIST_FILE = Geometry/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.artman.Geometry-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.artman.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Geometry;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
@@ -708,6 +710,7 @@
 				725B95FD1DFDEF58006118CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		725B96011DFDEF58006118CA /* Build configuration list for PBXNativeTarget "Geometry tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +719,7 @@
 				725B95FF1DFDEF58006118CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		725B96181DFDEF77006118CA /* Build configuration list for PBXNativeTarget "Geometry iOS" */ = {
 			isa = XCConfigurationList;
@@ -724,6 +728,7 @@
 				725B961A1DFDEF77006118CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		725B961B1DFDEF77006118CA /* Build configuration list for PBXNativeTarget "Geometry iOS Tests" */ = {
 			isa = XCConfigurationList;
@@ -732,6 +737,7 @@
 				725B961D1DFDEF77006118CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		72879CB219BD1F3A0015F977 /* Build configuration list for PBXProject "Geometry" */ = {
 			isa = XCConfigurationList;
