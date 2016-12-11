@@ -8,6 +8,7 @@
 
 import UIKit
 import XCTest
+import Geometry
 
 class GeometryTests: XCTestCase {
     
@@ -24,17 +25,13 @@ class GeometryTests: XCTestCase {
         
         rect.right -= 10
         XCTAssertEqual(rect, CGRect(x: 5, y: 5, width: 20, height: 20), "Should modified rect correctly")
-        
-        rect.width += 10
-        XCTAssertEqual(rect, CGRect(x: 5, y: 5, width: 30, height: 20), "Should modified rect correctly")
-        
-        rect.height += 20
-        XCTAssertEqual(rect, CGRect(x: 5, y: 5, width: 30, height: 40), "Should modified rect correctly")
+    
+        rect.size.width = 30
+        rect.size.height = 40
         
         XCTAssertEqual(rect.center, CGPoint(x: 20, y: 25), "Should modified rect correctly")
         XCTAssertEqual(rect.centerX, 20, "Should modified rect correctly")
         XCTAssertEqual(rect.centerY, 25, "Should modified rect correctly")
-        
         
         rect.centerX = 100
         XCTAssertEqual(rect, CGRect(x: 85, y: 5, width: 30, height: 40), "Should modified rect correctly")
