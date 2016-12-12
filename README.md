@@ -6,8 +6,7 @@
 ![Platform](https://img.shields.io/cocoapods/p/Geometry.svg?style=flat)
 [![Twitter](https://img.shields.io/badge/twitter-@artman-blue.svg?style=flat)](http://twitter.com/artman)
 
-Geometry is a UIView and CGRect extension that lets you work with view and rect geometry easier.
-values. It adds the following properties to both UIView and CGRect:
+Geometry is a UIView and CGRect extension that lets you work with view and rect geometry easier. It adds the following properties to UIView:
 
 * top
 * left
@@ -22,8 +21,8 @@ And it lets you define CGRectangles and CGPoints as strings.
 
 ## Requirements
 
-- iOS 7.0+ / Mac OS X 10.9+
-- Xcode 6.3 (Swift 1.2)
+- iOS 7.0 / watchOS 2.0 / Mac OS X 10.9
+- Swift 3.0
 
 ## Installation
 
@@ -31,13 +30,13 @@ To use Signals with a project targeting iOS 7, copy `Geometry.swift` into your p
 
 #### CocoaPods
 
-CocoaPods 0.36 adds supports for Swift and embedded frameworks. To integrate Geometry into your project add the following to your `Podfile`:
+To integrate Geometry into your project add the following to your `Podfile`:
 
 ```ruby
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'Geometry', '~> 1.0'
+pod 'Geometry', '~> 3.0'
 ```
 
 #### Carthage
@@ -45,14 +44,14 @@ pod 'Geometry', '~> 1.0'
 To integrate Geometry into your project using Carthage add the following to your `Cartfile`:
 
 ```ruby
-github "artman/Geometry" ~> 1.0
+github "artman/Geometry" ~> 3.0
 ```
 
 
 ## Quick start
 
 ```Swift
-myView.frame = CGRectMake(10, 10, 20, 20)
+myView.frame = CGRect(x: 10, y: 10, width: 20, height: 20)
 myView.left = 20 // Frame is now {{20, 10}, {20, 20}}
 myView.width = 100 // Frame is now {{20, 10}, {100, 20}}
 myView.right = 150 // Frame is now {{50, 10}, {100, 20}}

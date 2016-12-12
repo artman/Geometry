@@ -6,10 +6,15 @@
 //  Copyright (c) 2014 Tuomas Artman. All rights reserved.
 //
 
+import CoreGraphics
 import Foundation
 import UIKit
 
+
+
+
 /// Extends CGRect with helper properties for positioning and setting dimensions
+
 extension CGRect: ExpressibleByStringLiteral {
     
     /// The top coordinate of the rect.
@@ -51,26 +56,6 @@ extension CGRect: ExpressibleByStringLiteral {
         }
         set(value) {
             origin.x = value - size.width
-        }
-    }
-    
-    // The width of the rect.
-    public var width: CGFloat {
-        get {
-            return size.width
-        }
-        set(value) {
-            size.width = value
-        }
-    }
-    
-    // The height of the rect.
-    public var height: CGFloat {
-        get {
-            return size.height
-        }
-        set(value) {
-            size.height = value
         }
     }
     
@@ -220,7 +205,7 @@ extension UIView {
         }
         set(value) {
             var frame = self.frame
-            frame.width = value
+            frame.size.width = value
             self.frame = frame
         }
     }
@@ -232,7 +217,7 @@ extension UIView {
         }
         set(value) {
             var frame = self.frame
-            frame.height = value
+            frame.size.height = value
             self.frame = frame
         }
     }
