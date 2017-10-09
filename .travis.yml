@@ -7,8 +7,8 @@ env:
   - PROJECT=Geometry.xcodeproj
   - IOS_FRAMEWORK_SCHEME="Geometry iOS"
   - TVOS_FRAMEWORK_SCHEME="Geometry tvOS"
-  - IOS_SDK=iphonesimulator10.1
-  - TVOS_SDK=appletvsimulator10.0
+  - IOS_SDK=iphonesimulator11.0
+  - TVOS_SDK=appletvsimulator11.0
 
   matrix:
     - DESTINATION="OS=9.3,name=iPhone 4s"       SCHEME="$IOS_FRAMEWORK_SCHEME"  SDK="$IOS_SDK"  RUN_TESTS="YES" POD_LINT="YES"
