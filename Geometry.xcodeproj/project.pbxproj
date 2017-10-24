@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721A90641F94480400C94175 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A3F8161B818AFD003A946C /* Foundation.framework */; };
+		721A90651F94480A00C94175 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A3F8181B818B02003A946C /* UIKit.framework */; };
+		721A90671F94481800C94175 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721A90661F94481800C94175 /* Foundation.framework */; };
+		721A90691F94481D00C94175 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721A90681F94481D00C94175 /* UIKit.framework */; };
+		721A906B1F94483200C94175 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721A906A1F94482F00C94175 /* XCTest.framework */; };
+		721A906D1F94483C00C94175 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721A906C1F94483C00C94175 /* XCTest.framework */; };
 		725B95F41DFDEF58006118CA /* Geometry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725B95EB1DFDEF58006118CA /* Geometry.framework */; };
 		725B96101DFDEF77006118CA /* Geometry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 725B96071DFDEF77006118CA /* Geometry.framework */; };
 		725B961E1DFDF055006118CA /* Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 72879CBD19BD1F3B0015F977 /* Geometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +42,10 @@
 
 /* Begin PBXFileReference section */
 		7207F69D1BC076E20018256C /* Geometry.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Geometry.podspec; sourceTree = "<group>"; };
+		721A90661F94481800C94175 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		721A90681F94481D00C94175 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS11.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		721A906A1F94482F00C94175 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/AppleTVOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		721A906C1F94483C00C94175 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		725B95EB1DFDEF58006118CA /* Geometry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geometry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		725B95F31DFDEF58006118CA /* Geometry tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Geometry tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		725B96071DFDEF77006118CA /* Geometry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Geometry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721A90691F94481D00C94175 /* UIKit.framework in Frameworks */,
+				721A90671F94481800C94175 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721A906B1F94483200C94175 /* XCTest.framework in Frameworks */,
 				725B95F41DFDEF58006118CA /* Geometry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721A90651F94480A00C94175 /* UIKit.framework in Frameworks */,
+				721A90641F94480400C94175 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721A906D1F94483C00C94175 /* XCTest.framework in Frameworks */,
 				725B96101DFDEF77006118CA /* Geometry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +102,10 @@
 		7207F69C1BC076D40018256C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				721A906A1F94482F00C94175 /* XCTest.framework */,
+				721A906C1F94483C00C94175 /* XCTest.framework */,
+				721A90681F94481D00C94175 /* UIKit.framework */,
+				721A90661F94481800C94175 /* Foundation.framework */,
 				72A3F8181B818B02003A946C /* UIKit.framework */,
 				72A3F8161B818AFD003A946C /* Foundation.framework */,
 			);

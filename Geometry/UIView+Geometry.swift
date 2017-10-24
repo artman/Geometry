@@ -1,20 +1,12 @@
 //
-//  UIView+Geometry.swift
-//  Geometry
-//
-//  Created by Tuomas Artman on 7.9.2014.
-//  Copyright (c) 2014 Tuomas Artman. All rights reserved.
+//  Copyright (c) 2014-2017 Tuomas Artman. All rights reserved.
 //
 
 import CoreGraphics
 import Foundation
 import UIKit
 
-
-
-
 /// Extends CGRect with helper properties for positioning and setting dimensions
-
 extension CGRect: ExpressibleByStringLiteral {
     
     /// The top coordinate of the rect.
